@@ -16,7 +16,7 @@ app.use(express.static(__dirname));
 
 // Root route
 app.get('/', (req, res) => {
-  res.send('Welcome to the Node.js CRUD API! Use /items for CRUD operations.');
+  res.sendFile(path.join(__dirname, 'index.html'));
 });
 
 // Helper to read data
